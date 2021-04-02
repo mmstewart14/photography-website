@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:100,200,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+body {font-family: 'Roboto', sans-serif;}
+
+img {image-orientation: from-image;}
+
+.mobile-only {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  width: 60%;
+  height: 101vh;
+  position: fixed;
+  float: left;
+  z-index: 50;
+
+  background-color: #dfe6e9;
+}
+
+  .mobile-menu a {
+    color: black;
+  }
+
+  .mobile-menu img {
+    height: 30px;
+  }
+
+  .mobile-menu nav a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #FFC900;
+  }
+
+  .mobile-menu nav ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+
+    list-style-type: none;
+    text-align: center;
+  }
+
+    .mobile-menu nav ul li{
+      padding: 8px 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+
+      font-size: 1.1rem;
+    }
+
+  .mobile-menu .menu-footer h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .mobile-menu .menu-footer ul {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    text-align: center;
+    margin: 80% 0 5% 0;
+  }
+
+    .mobile-menu .menu-footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+      padding-top: 0.3rem;
+
+      background: #ffffff;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 50%;
+
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+      .mobile-menu .menu-footer ul li:last-child {
+        padding: 0.21rem;
+      }
+
+/* INDEX.HTML */
+.header {
+  font-family: 'Poppins', sans-serif;
+}
+
+  .header .flex-row {
+    padding-top: 5px;
+  }
+
+  .header .nav {
+    text-align: center;
+    width: 200px;
+    height:50px;
+    padding-top: 15px;
+  }
+
+    .header .nav a {
+      color: #2d3436;
+    }
+
+    .header .nav a:hover {
+      text-decoration: none;
+      border-bottom: 3px solid #FFC900;
+    }
+
+  .header .logo {
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .header .logo img {
+    width: 350px;
+    margin: 0 20px;
+  }
+
+    .header .logo p {
+      margin: 0;
+    }
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-logo {
+  display: none;
+  position: absolute;
+  top: 332px;
+  height: 85px;
+  background: white;
+  opacity: 0.8;
+}
+
+  .mobile-logo h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+
+.active-page {
+  border-bottom: 3px solid #FFC900;
+}
+
+.featured-photos .flex-row {
+  width: 100%;
+}
+
+.featured-photos img {
+  height: 92vh;
+}
+
+  .featured-photos img:last-child {
+    margin: 0 20px;
+  }
+
+  .featured-photos .description-box {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    width: 450px;
+
+    position: relative;
+    top: -260px;
+    left: 750px;
+  }
+
+  .featured-photos .description-box .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .featured-photos .description-box .color-bar {
+    height: 21px;
+    width: 90%;
+  }
+
+    .featured-photos .description-box p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .featured-photos .description-box img {
+      max-width: 400px;
+      width: auto;
+      height: auto;
+    }
+
+  .featured-photos .description-box .location {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #2d3436;
+
+    margin-top: 10px;
+  }
+
+.main-description {
+  margin: -50px 150px 100px 150px;
+}
+
+  .main-description #featured-photos-carousel {
+    width: 40%;
+  }
+
+  .main-description .quote-block .color-bar {
+    max-height: 600px;
+    width: 10px;
+  }
+
+  .main-description .quote-block {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+    .main-description .quote-block .quote {
+      margin-top: 35%;
+    }
+
+      .main-description .quote-block .quote .words {
+        font-family: 'Poppins';
+        font-size: 2em;
+      }
+
+      .main-description .quote-block .quote .author {
+        font-family: 'Caveat';
+        font-size: 2em;
+      }
+
+.reviews {
+  background-color: #dfe6e9;
+  color: white;
+  padding: 0 10%;
+  /* margin-bottom: 100px; */
+}
+
+  .reviews .color-bar {
+    height: 6px;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+    .reviews h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin: 0;
+      padding: 20px 0 0px 20px;
+      color: black;
+    }
+
+    .reviews h4 {
+      color: #565656;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    .reviews i {
+      color: #565656;
+      display: inline-block;
+      padding-left: 10px;
+    }
+
+    .reviews a:hover h4, .reviews a:hover i {
+      text-decoration: none;
+      color: black;
+    }
+
+    .reviews img {
+      max-width: 400px;
+      width: auto;
+      height: auto;
+    }
+
+    .reviews .quotes {
+      padding: 20px;
+      color: black;
+    }
+
+      .reviews .quotes blockquote {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
+      }
+
+      .reviews .quotes .author {
+        padding-top: 10px;
+        font-size: 1em;
+        font-family: 'Caveat';
+      }
+
+      .reviews .see-more-quotes {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+/* Footer On Every Page */
+footer {
+  height: 385px;
+  background-color: #fdcb6e;
+  color: #2d3436;
+}
+
+  footer .footer-row {
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+  }
+
+  footer .col-mb-12 {
+    text-align: center;
+  }
+
+  footer .contact {
+    margin: 0;
+    padding: 0;
+  }
+
+    footer .contact h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    footer .contact ul {
+      padding: 0;
+      margin-top: 80px;
+
+      list-style-type: none;
+      text-align: center;
+    }
+
+      footer .contact ul li {
+        display: inline-block;
+        margin: 0.15rem 10px 0 10px;
+        padding-top: 0.35rem;
+
+        background: #eaeaea;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+        footer .contact ul li a {
+          color: black;
+        }
+
+        footer .contact ul li img {
+          height: 30px;
+        }
+
+        footer .contact ul li:nth-child(2) {
+          /* margin: 0 10px 0 10px; */
+          padding-top: 0.23rem;
+        }
+
+        /* footer .contact ul li:nth-child(2) img {
+          margin-bottom: 0.25rem;
+        } */
+
+  footer .need-a-photographer {
+    float: right;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+    footer .need-a-photographer h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+
+    footer .need-a-photographer #headshot-button {
+      background-color: white;
+      color: #2d3436;
+      border: none;
+      border-radius: 3px;
+      font-size: 35px;
+      font-weight: 400;
+      padding: 10px 20px;
+      font-family: 'Caveat', cursive;
+    }
+
+      footer .need-a-photographer #headshot-button:focus {
+        border: none;
+        outline: none;
+      }
+
+  footer .about-me {
+    display: inline-block;
+    padding: 0;
+  }
+
+    footer .about-me .profile-pic {
+      height: 100px;
+      width: 100px;
+      border: 0;
+      border-radius: 50%;
+
+      margin-top: 10px;
+    }
+
+    footer .about-me h4 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    footer .about-me p {
+      width: 80%;
+      font-weight: 300;
+
+      margin: 20px 10% 0 10%;
+    }
+
+  footer .copyright {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: #2d3436;
+    text-align: center;
+
+    margin-top: 40px;
+    width: 100%;
+  }
+
+    footer .copyright hr {
+      height: 2px;
+      margin: 0;
+      padding: 0;
+
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+/* GALLERY.HTML */
+.gallery-images {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+  .gallery-images .col-xl-4 img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .gallery-images .gallery-tile {
+    opacity: 0.9;
+  }
+
+    .gallery-images .gallery-tile:hover {
+      opacity: 1;
+    }
+
+  .gallery-images .overlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+  }
+
+/* .gallery-container {
+  margin: 0 10%;
+} */
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+
+  .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+  }
+  .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+.links-to-other-galleries {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+.links-to-other-galleries a {
+  color: #303030;
+}
+
+.links-to-other-galleries a:hover {
+  text-decoration: none;
+}
+
+.links-to-other-galleries .col-xl-6 img {
+  width: 200px;
+}
+
+.links-to-other-galleries .overlay {
+  width: 57%;
+  font-size: 20px;
+}
+
+.links-to-other-galleries h2 {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 0 20px 10px;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+/* GALLERY-*.HTML */
+.title-bar {
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+  .title-bar .title {
+    padding: 0 10.5%;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+
+    .title-bar .title a h4 {
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      font-size: 20px;
+      border-bottom: 2px solid black;
+      display: inline-block;
+    }
+
+    .title-bar .title a:hover {
+      text-decoration: none;
+    }
+
+    .title-bar .title h2 {
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      margin: 0;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .title-bar .title i {
+      color: black;
+      display: inline-block;
+      padding-right: 7px;
+      font-size: 20px;
+    }
+
+
+br {
+  line-height: 0px;
+}
+
+/* CONTACT.HTML */
+.session-tabs {
+  text-align: center;
+}
+
+  .session-tabs p {
+    font-weight: 100;
+  }
+
+  .session-tabs .row {
+    margin: 0;
+    padding: 0 9%;
+  }
+
+  .session-tabs .session-tab {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 3px;
+  }
+
+    .session-tabs .session-tab .session-description {
+      background: #FFC900;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: lighter;
+      padding: 1em 0;
+      margin: 0;
+    }
+
+    .session-tabs .session-tab .selected-tab {
+      background: #F17C3E;
+    }
+
+  .professional-details {
+      display: none;
+  }
+
+    .professional-details .session-details .indicator {
+        height: 40px;
+        width: 60px;
+        position: relative;
+        left: 100px;
+        top: -150px;
+    }
+
+  .portrait-details {
+      display: block;
+  }
+
+    .portrait-details .session-details .indicator {
+        height: 40px;
+        width: 60px;
+        position: relative;
+        left: 400px;
+        top: -155px;
+    }
+
+  .grad-details {
+    display: none;
+  }
+
+    .grad-details .session-details .indicator {
+        height: 40px;
+        width: 60px;
+        position: relative;
+        left: 700px;
+        top: -155px;
+    }
+
+  .couple-details {
+      display: none;;
+  }
+
+  .couple-details .session-details .indicator {
+      height: 40px;
+      width: 60px;
+      position: relative;
+      left: 1000px;
+      top: -155px;
+  }
+
+  .session-details {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 3em;
+  }
+
+    .session-details .details {
+      display: inline-block;
+      width: 80%;
+      padding: 20px;
+      background: #f8f9fa;
+      text-align: left;
+      border-radius: 3px;
+    }
+
+      .session-details .details .im-flexible {
+        margin-top: 1em;
+        font-weight: 300;
+      }
+
+      .session-details .details h3 {
+        font-size: 1.5em;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 3px solid #F17C3E;
+      }
+
+      .session-details .details #student-discount {
+        height: 9em;
+      }
+
+      .session-details .details tr {
+        height: 3em;
+      }
+
+        .session-details .details td {
+          font-size: 1.1em;
+        }
+
+          .session-details .details td strong {
+            vertical-align: middle;
+            margin-right: 2em;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+          }
+
+          .session-details .details td p {
+            vertical-align: middle;
+            margin: 0;
+          }
+
+  .scheduling .schedule {
+    text-align: center;
+    padding: 0;
+  }
+
+    .scheduling .schedule .schedule-ready {
+      display: inline-block;
+      background: #f8f9fa;
+      width: 80%;
+      text-align: left;
+      padding: 20px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    .scheduling .schedule .schedule-ready h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    .scheduling .schedule .schedule-ready strong {
+      font-family: 'Poppins', sans-serif;
+      margin-right: 10px;
+      color: black;
+    }
+
+    .scheduling .schedule .schedule-ready a {
+      color: black;
+    }
+
+    .scheduling .schedule .schedule-ready a:hover {
+      color: #565656;
+      text-decoration: none;
+    }
+
+@media screen and (max-width: 44em) {
+
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    z-index: 200;
+    width: 100px;
+  }
+
+  .mobile-hide {
+    display: none;
+    width: 70%;
+    z-index: 100;
+  }
+
+  .mobile-only {
+    display: block;
+    width: 100px;
+    margin: 0;
+  }
+
+  .header .logo {
+    padding: 0;
+  }
+
+    .header .logo img {
+      width: 100%;
+      margin: 0;
+    }
+
+  .featured-photos {
+    display: none;
+  }
+
+  .main-description {
+    margin: 0;
+  }
+
+    .main-description .color-bar {
+      margin-left: 0;
+      display: none;
+    }
+
+    .main-description .quote-block {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+
+      .main-description .quote-block .quote {
+        margin: 40px 0;
+      }
+
+    .main-description #featured-photos-carousel {
+      width: 100%;
+      padding: 0;
+      margin-top: -10%;
+    }
+
+  .reviews .color-bar {
+    width: 90%;
+    margin-left: 6%;
+  }
+
+  footer {
+    height: 750px;
+  }
+
+    footer .about-me .profile-pic {
+      margin: 10px;
+    }
+
+    footer .about-me h4 {
+      margin-top: 70px;
+    }
+
+    footer .about-me p {
+      margin-top: 0;
+    }
+
+    footer .copyright {
+      padding: 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+      footer .copyright .mobile-only {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      footer .copyright p {
+        margin: 0;
+        padding: 0;
+      }
+
+  .title-bar {
+    margin: 0;
+  }
+
+    .title-bar .title {
+      padding: 0 0 10px 20px;
+    }
+
+  .gallery {
+    margin: 0;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+
+  .reviews {
+    margin: 0;
+    width: 100%;
+  }
+
+  .session-tabs {
+    margin: 0;
+    padding: 0;
+  }
+
+    .session-tabs .row {
+      margin: 0;
+      padding: 0;
+    }
+
+  .contact {
+    margin-top: 25px;
+  }
+
+  .professional-details, .portrait-details, .grad-details, .couple-details {
+    display: block;
+  }
+
+  .links-to-other-galleries {
+    margin: 0;
+  }
+
+    .links-to-other-galleries .col-xl-6 img {
+      width: 110px;
+    }
+
+    .links-to-other-galleries .col-xl-6 {
+      width: 50%;
+    }
+
+    .links-to-other-galleries .overlay {
+      width: 127%;
+      font-size: 15px;
+    }
+
+  .session-image {
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    background: #f8f9fa;
+    padding-top: 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .session-description {
+    background: #FFC900;
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 140px;
+    padding-top: 8px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .scheduling {
+    width: 100%;
+    margin: 0;
+  }
+
+  .scheduling .schedule .schedule-ready
+  {
+    width: 100%;
+  }
+
+  .scheduling .schedule {
+    width: 100%;
+  }
+}
