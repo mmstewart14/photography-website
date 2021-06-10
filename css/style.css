@@ -149,52 +149,59 @@ img {image-orientation: from-image;}
   border-bottom: 3px solid #FFC900;
 }
 
-.featured-photos .flex-row {
-  width: 100%;
+.featured-photos {
+  display: flex;
 }
 
-.featured-photos img {
-  height: 92vh;
-}
-
-  .featured-photos img:last-child {
-    margin: 0 20px;
+  .featured-photos img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
   }
 
-  .featured-photos .description-box {
+  .featured-photos .featured-photo-1 {
+    flex: 1.5;
+  }
+
+  .featured-photos .featured-photo-2 {
+    flex: 0.6667;
+    margin: 0 2%;
+  }
+
+  .main-feature .description-box {
     background: white;
     text-align: center;
     padding: 20px;
     width: 450px;
 
     position: relative;
-    top: -260px;
-    left: 750px;
+    top: -40vh;
+    left: 50vw;
   }
 
-  .featured-photos .description-box .title {
+  .main-feature .description-box .title {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 500;
   }
 
-  .featured-photos .description-box .color-bar {
+  .main-feature .description-box .color-bar {
     height: 21px;
     width: 90%;
   }
 
-    .featured-photos .description-box p {
+    .main-feature .description-box p {
       padding: 0;
       margin: 0;
     }
 
-    .featured-photos .description-box img {
+    .main-feature .description-box img {
       max-width: 400px;
       width: auto;
       height: auto;
     }
 
-  .featured-photos .description-box .location {
+  .main-feature .description-box .location {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -801,7 +808,7 @@ br {
       margin: 0;
     }
 
-  .featured-photos {
+  .main-feature {
     display: none;
   }
 
@@ -815,9 +822,7 @@ br {
     }
 
     .main-description .quote-block {
-      width: 100%;
-      margin: 0;
-      text-align: center;
+      display: none;
     }
 
       .main-description .quote-block .quote {
