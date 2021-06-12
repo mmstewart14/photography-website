@@ -24,10 +24,6 @@ img {image-orientation: from-image;}
     color: black;
   }
 
-  .mobile-menu img {
-    height: 30px;
-  }
-
   .mobile-menu nav a:hover {
     text-decoration: none;
     border-bottom: 3px solid #FFC900;
@@ -80,8 +76,9 @@ img {image-orientation: from-image;}
       font-weight: bold;
     }
 
-      .mobile-menu .menu-footer ul li:last-child {
-        padding: 0.21rem;
+      .mobile-menu .menu-footer ul li img {
+        height: 30px;
+        margin: -8% -2% 0 0;
       }
 
 /* INDEX.HTML */
@@ -168,25 +165,25 @@ img {image-orientation: from-image;}
     margin: 0 2%;
   }
 
-  .main-feature .description-box {
-    background: white;
-    text-align: center;
-    padding: 20px;
-    width: 450px;
+.main-feature .description-box {
+  background: white;
+  text-align: center;
+  padding: 1%;
+  width: 27em;
 
-    position: relative;
-    top: -40vh;
-    left: 50vw;
-  }
+  position: absolute;
+  top: 83vh;
+  left: 50vw;
+}
 
   .main-feature .description-box .title {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 500;
   }
 
   .main-feature .description-box .color-bar {
-    height: 21px;
+    height: 2%;
     width: 90%;
   }
 
@@ -212,43 +209,39 @@ img {image-orientation: from-image;}
   }
 
 .main-description {
-  margin: -50px 150px 100px 150px;
+  margin: 100px 0;
+  display: flex;
+  max-height: 90vh;
 }
 
   .main-description #featured-photos-carousel {
-    width: 40%;
-  }
-
-  .main-description .quote-block .color-bar {
-    max-height: 600px;
-    width: 10px;
+    width: 25em;
+    margin-left: 2%;
   }
 
   .main-description .quote-block {
-    width: 40%;
-    margin-left: 10%;
-    margin-top: 5%;
+    width: 25em;
   }
 
-    .main-description .quote-block .quote {
-      margin-top: 35%;
+    .main-description .quote-block .color-bar {
+      height: 90vh;
+      width: 2em;
     }
 
-      .main-description .quote-block .quote .words {
-        font-family: 'Poppins';
-        font-size: 2em;
-      }
+    .main-description .quote-block .quote .words {
+      font-family: 'Poppins';
+      font-size: 2em;
+    }
 
-      .main-description .quote-block .quote .author {
-        font-family: 'Caveat';
-        font-size: 2em;
-      }
+    .main-description .quote-block .quote .author {
+      font-family: 'Caveat';
+      font-size: 2em;
+    }
 
 .reviews {
   background-color: #dfe6e9;
   color: white;
   padding: 0 10%;
-  /* margin-bottom: 100px; */
 }
 
   .reviews .color-bar {
@@ -315,7 +308,7 @@ img {image-orientation: from-image;}
 
 /* Footer On Every Page */
 footer {
-  height: 385px;
+  height: 55vh;
   background-color: #fdcb6e;
   color: #2d3436;
 }
@@ -370,16 +363,8 @@ footer {
 
         footer .contact ul li img {
           height: 30px;
+          margin: -10% -2% 0 0;
         }
-
-        footer .contact ul li:nth-child(2) {
-          /* margin: 0 10px 0 10px; */
-          padding-top: 0.23rem;
-        }
-
-        /* footer .contact ul li:nth-child(2) img {
-          margin-bottom: 0.25rem;
-        } */
 
   footer .need-a-photographer {
     float: right;
@@ -630,7 +615,7 @@ br {
       font-family: 'Poppins', sans-serif;
       font-size: 15px;
       font-weight: lighter;
-      padding: 1em 0;
+      padding: 1rem 0;
       margin: 0;
     }
 
@@ -689,7 +674,7 @@ br {
   .session-details {
     text-align: center;
     padding: 0;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
   }
 
     .session-details .details {
@@ -702,32 +687,32 @@ br {
     }
 
       .session-details .details .im-flexible {
-        margin-top: 1em;
+        margin-top: 1rem;
         font-weight: 300;
       }
 
       .session-details .details h3 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         text-decoration: none;
         padding-bottom: 3px;
         border-bottom: 3px solid #F17C3E;
       }
 
       .session-details .details #student-discount {
-        height: 9em;
+        height: 9rem;
       }
 
       .session-details .details tr {
-        height: 3em;
+        height: 3rem;
       }
 
         .session-details .details td {
-          font-size: 1.1em;
+          font-size: 1.1rem;
         }
 
           .session-details .details td strong {
             vertical-align: middle;
-            margin-right: 2em;
+            margin-right: 2rem;
             font-family: 'Poppins', sans-serif;
             color: black;
           }
@@ -772,7 +757,7 @@ br {
       text-decoration: none;
     }
 
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 65em) {
 
   .nav {
     display: none;
@@ -821,18 +806,9 @@ br {
       display: none;
     }
 
-    .main-description .quote-block {
-      display: none;
-    }
-
-      .main-description .quote-block .quote {
-        margin: 40px 0;
-      }
-
     .main-description #featured-photos-carousel {
       width: 100%;
-      padding: 0;
-      margin-top: -10%;
+      margin: -10% 0 0 0;
     }
 
   .reviews .color-bar {
