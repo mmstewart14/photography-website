@@ -166,6 +166,7 @@ img {image-orientation: from-image;}
   }
 
 .main-feature .description-box {
+  display: none;
   background: white;
   text-align: center;
   padding: 1%;
@@ -695,7 +696,7 @@ br {
         font-size: 1.5rem;
         text-decoration: none;
         padding-bottom: 3px;
-        border-bottom: 3px solid #F17C3E;
+        border-bottom: 1px solid #F17C3E;
       }
 
       .session-details .details #student-discount {
